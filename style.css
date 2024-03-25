@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-family: PP mori;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #121212;
+}
+
+.img {
+    height: 300px;
+    width: 50px;
+    object-fit: cover;
+    border: 1px solid white;
+    border-radius: 14px;
+}
+
+.img:hover {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    /* border: 1px solid white; */
+    border-radius: 14px;
+    transition: 1s ease-in-out;
+}
+
+.idk{
+    height: 10%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 200px;
+    position: absolute;
+}
+
+.idk h1 {
+    background: -webkit-linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: anime 2s ease-in-out infinite alternate;
+    font-size: 50px;
+}
+
+@keyframes anime {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
